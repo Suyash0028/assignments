@@ -1,0 +1,87 @@
+body {
+    font: normal 1em/1.2 Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 5em;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding-bottom: 3em;
+}
+main{
+    background-color: black;
+    color:white;
+}
+main footer{
+    background-color: aquamarine;
+    color: black;
+}
+footer{
+    background-color: aquamarine;
+    color: black;
+}
+body h1, h2, h3, h4, h5, h6{
+    color: black;
+    background-color: orange;
+    text-shadow: 1px 1px 1px red;
+    border: 2px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+body h1{
+    line-height: 2em;
+    text-align: center;
+    letter-spacing: 0.5em;
+}
+body h2{
+    line-height: 1.5em;
+    text-align: left;
+    width: 400px;
+    margin: 0;
+}
+body h3{
+    line-height: 2em;
+    text-align: center;
+}
+p{
+    padding: 0;
+    margin: 0;
+    line-height: 3em;
+}
+body a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+}
+ul{
+    padding-bottom: 2em;
+}
+a:visited{
+    color: purple;
+}
+a:hover{
+    color: blue;
+    border-radius: 0.5px;
+    box-shadow: 0 3px 10px red;
+}
+a:active{
+    color: green;
+}
+aside, section {
+    margin: 0 0 0 0;
+    width: auto;
+}
+button{
+    background-color: green;
+    color: black;
+    padding: 0.5em;
+
+}
+button:hover{
+    color: red; 
+    background-color: gray;
+}
+input{
+    padding: 0.5em;
+    width: 20em;
+}
+input:hover{
+    box-shadow: 0 3px 10px red;
+}

@@ -1,0 +1,101 @@
+
+      1. What is the correct way to include an external JavaScript file in HTML?
+      
+      a) &lt;script src='script.js'&gt;&lt;/script&gt;
+      b) &lt;js src='script.js'&gt;&lt;/js&gt;
+      c) &lt;link rel='javascript' href='script.js'&gt;
+      d) &lt;include script='script.js'&gt;
+    
+
+    
+      2. What will the following code output: console.log(typeof [1, 2, 3]);
+      
+      a) number
+      b) object
+      c) array
+      d) undefined
+  
+
+    
+      3. Which function is used to parse a JSON string?
+      
+      a) parseJSON()
+      b) JSON.parse()
+      c) fromJSON()
+      d) parse()
+    
+
+    
+      4. What is the purpose of the `let` keyword in JavaScript?
+      
+      a) Declare a constant variable
+      b) Declare a block-scoped variable
+      c) Declare a global variable
+      d) Declare a function
+    
+
+    
+      5. How do you check if a variable is not equal to a specific value in JavaScript?
+      
+      a) x =! 5
+      b) x !== 5
+      c) x ==! 5
+      d) x !=== 5
+    
+
+    
+      6. What is the output of the following code: console.log(2 + '2' - 1);
+      
+      a) 3
+      b) '22'
+      c) 21
+      d) NaN
+    
+
+    
+      7. Which of the following is the correct way to create a function in JavaScript?
+      
+      a) function: myFunction() {}
+      b) func myFunction() {}
+      c) function myFunction() {}
+      d) create function myFunction() {}
+    
+
+    
+      8. What does the '===' operator do in JavaScript?
+      
+      a) Checks for equality and type
+      b) Checks for equality only
+      c) Checks for type only
+      d) Converts the right-hand side to a number
+    
+
+    
+      9. What is the purpose of the `break` statement in a switch statement?
+      
+      a) Terminates the switch statement
+      b) Skips the current case and moves to the next
+      c) Jumps to a specific case label
+      d) Exits the current loop
+    
+
+    
+      10. What is the purpose of the `window` object in the browser environment?
+      
+      a) Represents the current HTML document
+      b) Represents the browser window
+      c) Represents a DOM element
+      d) Represents the JavaScript engine
+    
+
+Answers:
+q1: 'a',
+q2: 'b',
+q3: 'b',
+q4: 'b',
+q5: 'b',
+q6: 'c',
+q7: 'c',
+q8: 'a',
+q9: 'a',
+q10: 'b',

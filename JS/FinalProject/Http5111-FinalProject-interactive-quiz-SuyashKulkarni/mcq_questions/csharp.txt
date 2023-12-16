@@ -1,0 +1,129 @@
+Question 1:
+Which of the following is the correct way to declare a variable in C#?
+
+a) int variableName;
+
+b) variableName int;
+
+c) var variableName;
+
+d) int = variableName;
+
+Answer: a) int variableName;
+
+Question 2:
+What is the purpose of the "using" statement in C#?
+
+a) To include external libraries in the code.
+
+b) To define a namespace.
+
+c) To specify the scope of a variable.
+
+d) To handle exceptions.
+
+Answer: a) To include external libraries in the code.
+
+Question 3:
+Which of the following is the correct syntax for a single-line comment in C#?
+
+a) /* This is a comment */
+
+b) // This is a comment
+
+c) # This is a comment
+
+d) ' This is a comment
+
+Answer: b) // This is a comment
+
+Question 4:
+What does the "this" keyword refer to in C#?
+
+a) It refers to the current instance of the class.
+
+b) It is used to declare constants.
+
+c) It refers to the base class.
+
+d) It is a data type specifier.
+
+Answer: a) It refers to the current instance of the class.
+
+Question 5:
+In C#, how can you handle exceptions using try-catch blocks?
+
+a) try { /* code / } catch { / exception handling code */ }
+
+b) exception { /* code */ }
+
+c) catch { /* code / } try { / exception handling code */ }
+
+d) handle { /* code / } except { / exception handling code */ }
+
+Answer: a) try { / code / } catch { / exception handling code / }
+
+Question 6:
+What is the default access modifier for members of a C# class if no access modifier is specified?
+
+a) public
+
+b) private
+
+c) protected
+
+d) internal
+
+Answer: b) private
+
+Question 7:
+In C#, which keyword is used to implement method overloading?
+
+a) overload
+
+b) override
+
+c) over
+
+d) None of the above
+
+Answer: d) None of the above
+
+Question 8:
+What is the purpose of the "static" keyword in C#?
+
+a) It is used to create static variables.
+
+b) It is used to declare a constant.
+
+c) It is used to define static methods.
+
+d) It is a data type specifier.
+
+Answer: c) It is used to define static methods.
+
+Question 9:
+Which of the following is used to exit from a loop in C#?
+
+a) break
+
+b) exit
+
+c) terminate
+
+d) return
+
+Answer: a) break
+
+Question 10:
+Which of the following is not a valid C# data type?
+
+a) int
+
+b) float
+
+c) real
+
+d) char
+
+Answer: c) real

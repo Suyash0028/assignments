@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Interactive Quiz</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Jquery script is added here -->
+        <script src="../jquery/jquery-3.7.1.min.js"></script>
+
+        <!-- Css file -->
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        
+        <!-- JS file -->
+        <script src="../js/app.js" type="text/javascript" ></script>
+    </head>
+    <body>
+
+        <!-- Header of the page -->
+        <div class="header">
+            Interactive Quiz
+        </div>
+
+        <!-- This is the main container where everything will be added -->
+        <main class="main-container">
+
+            <!-- Instructions mentioned in this div -->
+            <div id="instructions">
+                <h1>Quiz Instructions</h1>
+                    <h2>Welcome to our interactive quiz! Please read the instructions carefully before starting:</h2>
+                <ol>
+                    <li>1. This quiz consists of multiple-choice questions.</li>
+                    <li>2. Choose the correct answer for each question.</li>
+                    <li>3. Every correct answer counts 1 point and quiz contains 10 questions.</li>
+                    <li>4. Select the language and click on start. It will show questions according to the selected language.</li>
+                    <li>5.Click the "Next" button to move to the next question.</li>
+                    <li>6. Your progress will be displayed at the top of the quiz.</li>
+                    <li>7. Have fun and good luck!</li>
+                </ol>
+            </div>
+
+            <!-- This is the sub heading of the page -->
+            <div id="sub_heading">
+                Please Select the language
+            </div>
+
+            <!-- Language choice container -->
+            <div id="languages_container">
+                <ul id="language"></ul>
+            </div>
+
+            <!-- Main container for questions and options of the quiz -->
+            <div id="container">
+
+                <!-- Questions are added here -->
+                <div class="question_container">
+                    <div id="question"></div>
+                </div>
+
+                <!-- Options are added here -->
+                <div id="choices_container">
+                    <ul id="choices"></ul>
+                </div>
+
+                <!-- Timer is added here -->
+                <div id="timer"></div>
+
+                <!-- Button container where start and next buttons are placed -->
+                <div id="buttons_container">
+                    <button id="start_button">Start</button>
+                    <button id="next_button">Next</button>
+                </div>
+
+                <!-- This is score container where score is displayed -->
+                <div id="score_container">
+                    Score: 0 / 10
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

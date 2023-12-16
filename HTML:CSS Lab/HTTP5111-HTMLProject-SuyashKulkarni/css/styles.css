@@ -1,0 +1,380 @@
+/* Body container and styling for tags */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin-left: 15px; 
+}
+h2, h3, p {
+    color: #333;
+}
+
+/* Header Section */
+#header_container{
+    display: flex;
+    justify-content: space-between;
+    height: 5em;
+    align-items: center;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+}
+
+/* Navigation Container */
+#nav_container, li, ul, a{
+    display: flex;
+    margin: 15px;
+    flex-direction: row;
+    color: #fff;
+    text-decoration: none !important;
+}
+/* Main Container */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+/* Styling for Clouds */
+.clouds, img{
+    position: relative;
+    animation: cloudAnimation linear infinite alternate;
+    animation-duration: 10s; /* Adjust the speed of the raindrops */
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    width: fit-content;
+}
+/* Visited link styles */
+a:visited {
+    color: #fff;
+}
+/* Hover styles for all links */
+a:hover {
+    box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+    cursor: pointer;
+}
+/* Active (clicked) link styles */
+a:active {
+    color: green;
+}
+
+/* Blog post css - First Rectangle box only */
+.blog-post {
+    background-color: #fff;
+    width: 730px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.blog-post:hover {
+    transform: scale(1.02);
+}
+
+/* Container for all the blogs */
+.related-posts {
+    display: flex;
+    max-width: 800px; /* Set a maximum width for the container if needed */
+    width: 100%;
+    overflow-x: auto;
+    flex-wrap: wrap;    
+}
+
+/* Styling for each blog card */
+.card {
+    flex: 0 0 calc(33.33% - 10px);
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+    margin-right: 43px;
+}
+.card:last-child {
+    margin-right: 0; /* Remove margin for the last card in a row */
+}
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* Container for the ball */
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* ball element  */
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    animation: bounce 2s infinite;
+}
+.ball::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: rgba(0, 0, 0, 0.1);
+    bottom: -5px;
+    border-radius: 50%;
+}
+
+/* Score card on the right top */
+.scoreboard {
+    position: fixed;
+    flex: 0 0 calc(33.33% - 10px);
+    top: 100px;
+    right: 15px;
+    padding: 10px;
+    background-color: green;
+    transition: transform 0.3s ease-in-out;
+    animation: floatScoreboard 3s ease-in-out infinite;
+}
+.scoreboard:hover {
+    transform: scale(1.05);
+}
+
+/* Image on the right bottom */
+.rightimg{
+    position: fixed;
+    flex: 0 0 calc(33.33% - 10px);
+    top: 500px;
+    right: 15px;
+}
+
+/* Scoring scire board */
+.score-ticker {
+    position: fixed;
+    top: 85px;
+    left: 0;
+    padding: 10px;
+    animation: tickerScroll 20s linear infinite alternate;
+    background-color: transparent;
+    border: 3px solid #00d7c3;
+    border-radius: 50px;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: #00d7c3;
+}
+.score-ticker:hover {
+    box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+    border: 3px solid #00d7c3;
+    cursor: pointer;
+}
+
+/* Footer of the page */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+button:hover {
+    transform: translateX(5px);
+    background-color: green;
+}
+
+/* Raindrop styles */
+#raindrop {
+    width: 2px;
+    height: 10px;
+    background-color: whitesmoke; /* Steel Blue */
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    animation: rainAnimation 0.5s linear infinite;
+}
+
+/* Randomly position each raindrop */
+#raindrop:nth-child(1) { left: 5%; }
+#raindrop:nth-child(2) { left: 15%; }
+#raindrop:nth-child(3) { left: 25%; }
+#raindrop:nth-child(4) { left: 35%; }
+#raindrop:nth-child(5) { left: 45%; }
+#raindrop:nth-child(6) { left: 55%; }
+#raindrop:nth-child(7) { left: 65%; }
+#raindrop:nth-child(8) { left: 75%; }
+#raindrop:nth-child(9) { left: 85%; }
+#raindrop:nth-child(10) { left: 95%; }
+
+/* Create Page Submit form class */
+.submit-form {
+    text-align: center;
+    transition: opacity 2s ease-in-out, transform 5s ease-in-out;
+}
+.submit-form.hide {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-50px);
+}
+
+/* Create Page Form fields container */
+.form-fields {
+    max-width: 300px;
+    margin: 0 auto;
+}
+/* Create Page Fields */
+.form-field {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-submitted {
+    display: block;
+    transform: translateX(100%) rotate(-45deg);
+}
+
+.form-field:hover {
+    background-color: white;
+    box-shadow: 0 0 10px 0 black inset, 0 0 20px 2px black;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.form-submitted .submit-form {
+    display: none;
+}
+
+/* Submit button */
+#submit-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+#submit-button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 0 10px 0 #2980b9 inset, 0 0 20px 2px #2980b9;
+    border: 3px solid #2980b9;
+    cursor: pointer;
+}
+
+/* Abount page Container */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.about-content {
+    padding: 20px;
+}
+
+/* About Page Card visible in the center */
+.about-card {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.about-card:hover {
+    transform: scale(1.05);
+}
+
+/* About Page Team member container */
+.team-members {
+    margin-top: 20px;
+}
+.team-member {
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #fff; /* White text color for team member names */
+    background-color: #1a1a1a; /* Dark background for team members */
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Key frame animations */
+
+/* Animation of the floating score card on the top right corner */
+@keyframes floatScoreboard {
+    0% { 
+        transform: translateY(0); 
+    }
+    50% { 
+        transform: translateY(-5px);
+    }
+    100% { 
+        transform: translateY(0); 
+    }
+}
+
+/* Animation for the raindrops */
+@keyframes rainAnimation {
+    0% {
+        transform: translateY(0vh);
+        top: 5em;
+    }
+    50% {
+        transform: translateY(90vh);
+        top: 50%;
+    }
+    100% {
+        transform: translateY(90vh);
+        top: 100%;
+    }
+}
+/* Animation for scorlling score board */
+@keyframes tickerScroll {
+    0% { 
+        left: 0; 
+    }
+    100% { 
+        left: calc(100% - 100px);
+        width: 197.4px; 
+    }
+}
+/* Animation for bouncing ball */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-600px);
+    }
+    100% {
+        transform: translateY(0);
+        height: 40px;
+        bottom: 40px;
+    }
+}
+/* Animation for the sky background */
+@keyframes cloudAnimation {
+    0% { 
+        left: 0; 
+    }
+    100% { 
+        left: calc(100% - 100px); 
+    }
+}

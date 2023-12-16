@@ -1,0 +1,91 @@
+Certainly! Here are 10 HTML/CSS quiz questions with answer options and the correct answers:
+
+Question 1:
+What does HTML stand for?
+- a) Hyper Text Markup Language
+- b) High Technology Modern Language
+- c) Hyper Transfer Markup Language
+- d) Hyperlink and Text Markup Language
+
+Answer: a) Hyper Text Markup Language
+
+Question 2:
+Which HTML tag is used to define an external stylesheet?
+- a) "&lt;css&gt;"
+- b) "&lt;style&gt;"
+- c) "&lt;link&gt;"
+- d) "&lt;stylesheet&gt;"
+
+Answer: c) "&lt;link&gt;"
+
+Question 3:
+How can you include an external CSS file in an HTML document?
+- a) "&lt;style src="styles.css"&gt;"
+- b) "&lt;link href="styles.css"&gt;"
+- c) "&lt;style link="styles.css"&gt;"
+- d) "&lt;stylesheet src="styles.css"&gt;"
+
+Answer: b) "&lt;link href="styles.css"&gt;
+
+Question 4:
+Which CSS property is used to set the text color of an element?
+- a) "text-color"
+- b) "color"
+- c) "text-style"
+- d) "font-color"
+
+Answer: b) "color"
+
+Question 5:
+What does CSS stand for?
+- a) Cascading Style Script
+- b) Creative Style Sheet
+- c) Computer Style Sheet
+- d) Cascading Style Sheet
+
+Answer: d) Cascading Style Sheet
+
+Question 6:
+Which HTML tag is used to create an ordered list?
+- a) "&lt;ol&gt;"
+- b) "&lt;ul&gt;"
+- c) "&lt;li&gt;"
+- d) "&lt;list&gt;"
+
+Answer: a) "&lt;ol&gt;"
+
+Question 7:
+In CSS, which property is used to control the space between elements?
+- a) "margin"
+- b) "padding"
+- c) "spacing"
+- d) "border"
+
+Answer: b) "padding"
+
+Question 8:
+Which CSS property is used to make text bold?
+- a) "font-weight"
+- b) "text-weight"
+- c) "bold-text"
+- d) "font-bold"
+
+Answer: a) "font-weight"
+
+Question 9:
+Which HTML tag is used to create a hyperlink?
+- a) "&lt;link&gt;"
+- b) "&lt;href&gt;"
+- c) "&lt;a&gt;"
+- d) "&lt;url&gt;"
+
+Answer: c) "&lt;a&gt;"
+
+Question 10:
+Which CSS property is used to specify the type of cursor to be displayed when hovering over an element?
+- a) "cursor-type"
+- b) "pointer"
+- c) "mouse-cursor"
+- d) "cursor"
+
+Answer: d) "cursor"

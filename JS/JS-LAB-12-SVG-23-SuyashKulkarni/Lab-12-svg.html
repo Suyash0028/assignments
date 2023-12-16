@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>SVG Lab</title>
+	<script src="./Lab-12-svg.js"></script>
+</head>
+
+<body id="svgBody">
+
+<div id="svgDiv">
+	<svg width="300" height="300"  xmlns="http://www.w3.org/2000/svg" version="1.1">
+		
+		
+		
+<!--UNCOMMENT THE LINES BELOW TO SEE HOW I USED THE <pattern> SVG ELEMENT WITH A SQUARE TO CREATE A 10px by 10px GRID OVERLAY TO MAKE LOCATING COORDINATES EASIER WHILE I CREATED THE GRAPHIC.
+	<pattern id="dotGrid" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10"  >
+		<rect width="10" height="10" stroke="black" fill="none" />
+	</pattern>
+	<rect width="300" height="300" fill="url(#dotGrid)" />
+-->
+		<!-- Background -->
+		<rect width="100%" height="100%" fill="#87CEEB" />
+
+		<!-- Snowman Body -->
+		<circle id="circle1" cx="200" cy="300" r="40" fill="#ffffff" />
+		<circle id="circle2" cx="200" cy="230" r="30" fill="#ffffff" />
+		<circle id="circle3" cx="200" cy="180" r="20" fill="#ffffff" />
+
+		<!-- Snowman Eyes -->
+		<circle cx="190" cy="175" r="2" fill="#000" />
+		<circle cx="210" cy="175" r="2" fill="#000" />
+
+		<!-- Snowman Nose -->
+		<polygon id="nose" points="200,185 195,195 205,195" fill="#FFA500" />
+
+		<!-- Winter Ground -->
+		<rect width="100%" height="20%" fill="#ffffff" />
+	</svg>
+
+</div>
+</body>
+</html>

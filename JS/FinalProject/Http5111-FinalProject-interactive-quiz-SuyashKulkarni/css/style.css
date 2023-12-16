@@ -1,0 +1,83 @@
+/* Updated css for the whole body tag */
+body{
+    /* Image-Url: https://www.freepik.com/free-vector/orange-question-mark-background-with-text-space_10136664.htm#query=quiz%20background&position=1&from_view=keyword&track=ais */
+    background: url('../images/backgroundImg.jpg');
+    background-size: cover;
+    font-family: fantasy;
+    box-sizing: border-box;
+    color: whitesmoke;
+    font-size: large;
+}
+/* Font size for the header */
+.header{
+    font-size: 70px;
+}
+/* Changing styles for all ul li tags */
+ ul,li{
+    list-style-type: none;
+    font-size: 30px;
+}
+/* Hover effect on li tags */
+li:hover{
+    transition: box-shadow .3s;
+    box-shadow: 5px 5px #36454F;
+    padding: 2px 4px;
+    color: green;
+}
+
+/* Language container where the language options are added  */
+#languages_container{
+    display: flex;
+}
+
+/* Same font size for the choices and  questions */
+.question_container, .choices_container, #sub_heading, #languages_container{
+    font-size: 30px;
+}
+
+/* Adjusted the width according to the content */
+#choices{
+    max-width: fit-content;
+}
+
+/* Button css effects for start and next */
+#buttons_container{
+    display: inline-block;
+}
+#start_button, #next_button {
+    align-items: flex-start;
+    font-family: fantasy;
+    background-color: #4CAF50; 
+    color: white;
+    border: none; 
+    border-radius: 5px;
+    padding: 5px 10px; 
+    font-size: 25px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 20em; 
+}
+#start_button:hover, #next_button:hover {
+    background-color: #45a049;
+}
+
+
+/* Timer position and color for the timer */
+#timer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 9em;
+    max-width: 5px;
+    color: red;
+    font-size: 40px;
+}
+/* Css for score container where the score is added  */
+#score_container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: red;
+    font-size: 40px;
+}
